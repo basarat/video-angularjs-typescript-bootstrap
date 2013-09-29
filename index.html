@@ -15,13 +15,16 @@
 </head>
 <body ng-controller="MainController">
 
-    <div class="well">
-        <div class="btn" ng-click="vm.increaseProgress()">click me </div>
-        <div>{{vm.message}}</div>
-        <div class="progress progress-striped progress-active">
-            <div class="bar" style="width: {{vm.progress}}%"></div>
-        </div>
-    </div>
+    <progressbar
+        click="vm.increaseProgress()"
+        message="{{vm.message}}"
+        progress="vm.progress"
+        ></progressbar>  
+      <progressbar
+        click="vm.increaseProgress()"
+        message="{{vm.message}}"
+        progress="vm.progress"
+        ></progressbar>
 
 </body>
 </html>

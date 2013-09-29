@@ -1,0 +1,1 @@
+module progressbar { export var html =  '<div class="well">    <button class="btn" ng-click="click()">click me </button>    <div>{{message}}</div>    <div class="progress progress-striped progress-active">        <div class="bar" style="width: {{progress}}%"></div>    </div></div>' } 
