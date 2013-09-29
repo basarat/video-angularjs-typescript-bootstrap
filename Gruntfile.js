@@ -13,8 +13,6 @@ module.exports = function (grunt) {
                 watch: 'typescript',
 
                 out: 'app/out.js',
-                //outDir: 'app',              // The destination for javascript files 
-                //amdloader: 'app/loader.js', // Use amd to load                
             },
         }
     });
