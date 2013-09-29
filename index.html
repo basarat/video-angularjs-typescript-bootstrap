@@ -10,14 +10,18 @@
     <script src="vendor/angular.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!--<script src="vendor/require.js" data-main="app/loader.js"></script>-->
     <script src="app/out.js"></script>
 
 </head>
 <body ng-controller="MainController">
 
-    <div class="btn" ng-click="vm.increaseProgress()"> click me </div>
-    <testme progress="vm.progress"></testme>
-    
+    <div class="well">
+        <div class="btn" ng-click="vm.increaseProgress()">click me </div>
+        <div>{{vm.message}}</div>
+        <div class="progress progress-striped progress-active">
+            <div class="bar" style="width: {{vm.progress}}%"></div>
+        </div>
+    </div>
+
 </body>
 </html>
