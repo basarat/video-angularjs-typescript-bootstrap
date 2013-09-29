@@ -1,14 +1,13 @@
-module Controllers{
-    export class MainController{
-        message = "asdf";
-        progress = 0; 
-        constructor($scope,logService:LogService){
-            $scope.vm = this;
-            logService.log('Some log');
-        }
+///<reference path="../reference.ts"/>
 
-        increaseProgress() {
-            this.progress += 10; 
-        }
+class MainController {
+    progress = 0;
+
+    constructor($scope) {
+        $scope.vm = this;
+    }
+
+    increaseProgress() {
+        this.progress += 10;
     }
 }

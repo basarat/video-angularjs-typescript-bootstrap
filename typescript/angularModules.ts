@@ -1,6 +1,5 @@
 /// <reference path="./reference.ts" />
 
-module myApp {
-    export var services = angular.module('myApp.services', []); 
+module myApp {    
     export var directives = angular.module('myApp.directives',[]); 
 }
